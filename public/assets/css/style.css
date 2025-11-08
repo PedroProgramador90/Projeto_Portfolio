@@ -26,6 +26,101 @@ html,body {
 }
 
 
+header.mobile {
+    display:none;
+    width:100%;
+    padding:30px 0;
+    background-color:var(--color-seven);
+}
+
+
+.flex-mobile {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:0 2%;
+}
+
+.mobile-profile img {
+    width:60px;
+    height:60px;
+    border-radius: 100%;
+    border: 5px solid var(--color-six);
+    background-clip: padding-box;
+    border-style:solid;
+}
+
+.space-fill {
+    max-width:1200px;
+    padding:0 2%;
+}
+
+.icon-mobile {
+    width: 32px;
+    height:32px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+
+
+.menu-mobile {
+    width: 0%;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:var(--color-one);
+    overflow: hidden;
+    transition:width .5s;
+    z-index: 99999;
+}
+
+.nav-mobile {
+    margin:200px 0;
+}
+
+.nav-mobile ul li {
+    padding:20px 5%;
+}
+
+.nav-mobile ul li:hover {
+     border-left: 5px solid var(--color-seven);
+     background-color:var(--color-four);
+}
+
+.nav-mobile ul li a {
+    color:var(--color-two);
+    font-size:1.2rem;
+    font-family: var(--font-roboto);
+}
+
+.nav-mobile ul li a:hover {
+    color:var(--color-eleven);
+}
+
+.nav-mobile .selected {
+    color: var( --color-eleven);
+} 
+
+.menu-mobile.show-menu {
+    width: 70%;
+}
+
+.btn-close {
+  float:right;
+  padding:30px 5%;
+
+}
+
+.btn-close i {
+    color:var(--color-tree);
+    font-size:2rem;
+    cursor:pointer;
+}
+
+
 .container {
     display:flex;
 }
@@ -109,7 +204,7 @@ html,body {
 
 .title h2 {
     color:var(--color-seven);
-    font-size:5.9rem;
+    font-size:7.3rem;
     font-style: italic;
     font-family:var(--font-roboto);
     margin-bottom:1.3rem;
@@ -140,7 +235,7 @@ html,body {
     color: var(--color-nine);
     font-size:1rem;
     font-family:sans-serif;
-    max-width:600px;
+    max-width:730px;
     margin-top: 1.3rem;
     text-align: justify;
     line-height:1.5rem;
